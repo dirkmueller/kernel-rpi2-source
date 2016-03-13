@@ -86,7 +86,6 @@ Source62:       old-flavors
 Source63:       arch-symbols
 Source64:       package-descriptions
 Source65:       kernel-spec-macros
-Source66:       configtool.pl
 Source67:       log.sh
 Source68:       host-memcpy-hack.h
 Source69:       try-disable-staging-driver
@@ -158,6 +157,7 @@ Group:          Development/Sources
 AutoReqProv:    off
 Provides:       %name-vanilla = %version-%source_rel
 Provides:       multiversion(kernel)
+Requires:       kernel-macros
 
 %description vanilla
 Vanilla Linux kernel sources with minor build fixes.
